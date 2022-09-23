@@ -144,13 +144,13 @@ form input{
 }
 
 
-@media(max-width:350px){
+@media(max-width:450px){
     .container{
         flex-direction: column;
     }
     
     .left{
-        width: 300px;
+        width: 250px;
         align-content: center;
         align-items: center;
     }

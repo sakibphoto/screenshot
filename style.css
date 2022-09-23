@@ -142,3 +142,21 @@ form input{
         height: 75px;
     }
 }
+
+
+@media(max-width:350px){
+    .container{
+        flex-direction: column;
+    }
+    
+    .left{
+        width: 300px;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .left p{
+        height: 75px;
+    }
+}
+

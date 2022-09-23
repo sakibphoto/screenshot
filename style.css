@@ -58,6 +58,7 @@ form{
     display: flex;
     padding: 20px;
     margin-bottom: 25px;
+    margin-top:40px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -153,8 +154,13 @@ form input{
         width: 300px;
         align-content: center;
         align-items: center;
+        text-align:center;
     }
-    
+    .left h1{
+    text-align:center;}
+    .left p{
+    text-align:center;
+    }
     form{
     width:250px;
     }

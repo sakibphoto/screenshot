@@ -54,7 +54,7 @@ body{
 form{
     background-color: white;
     border-radius: 10px;
-    width:250px;
+    width:303px!important;
     display: flex;
     padding: 20px;
     margin-bottom: 25px;
